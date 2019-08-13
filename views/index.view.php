@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-<nav>
-    <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/about/culture">About Culture</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
+<?php require 'partials/head.php'?>
 <h1>Index</h1>
-</body>
-</html>
+<?php require 'partials/footer.php'?>
