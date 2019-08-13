@@ -20,7 +20,8 @@ class Router
     {
         if (array_key_exists($uri, $this->routes)) {
             return $this->routes[$uri];
+        } else {
+            return 'views/404.view.php';
         }
-        throw new Exception('No route defined for this URI.');
     }
 }

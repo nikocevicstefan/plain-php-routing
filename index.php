@@ -1,10 +1,11 @@
 <?php
 
 //load required files
-$database = require 'core/bootstrap.php';
+require 'core/bootstrap.php';
 
-$uri = trim($_SERVER['REQUEST_URI'], '/');
+$database = $app['database'];
 
+$uri = Request::uri();
 $router = Router::load('routes.php');
 
 require $router->direct($uri);
